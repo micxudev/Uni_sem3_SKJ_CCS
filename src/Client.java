@@ -67,7 +67,7 @@ public class Client {
             String add3 = in.readLine();
             System.out.println("ADD result: " + add3); // ERROR
 
-            // Sum: 8. Errors: 3
+            // Sum: 8. Errors: 3. (per one cycle)
         }
     }
 }

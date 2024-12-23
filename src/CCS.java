@@ -190,13 +190,13 @@ public class CCS {
     private static class Stats {
         private int totalClients = 0;
         private int totalRequests = 0;
-        private HashMap<String, Integer> totalOps = new HashMap<>();
+        private final HashMap<String, Integer> totalOps = new HashMap<>();
         private int totalIncorOps = 0;
         private int totalSum = 0;
 
         private int clientsLast10Sec = 0;
         private int requestsLast10Sec = 0;
-        private HashMap<String, Integer> opsLast10Sec = new HashMap<>();
+        private final HashMap<String, Integer> opsLast10Sec = new HashMap<>();
         private int incorOpsLast10Sec = 0;
         private int sumLast10Sec = 0;
 
@@ -233,6 +233,7 @@ public class CCS {
             sumLast10Sec = 0;
         }
 
+        // getStats() might show some errors before first run (but should compile correctly)
         public synchronized String getStats() {
             return String.format(
                 "%n--------------- Statistics ---------------%n" +
