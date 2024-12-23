@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="CCS:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CCS_jar</output-path>
+    <root id="archive" name="CCS.jar">
+      <element id="module-output" name="CCS" />
+    </root>
+  </artifact>
+</component>
